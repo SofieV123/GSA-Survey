@@ -1,0 +1,450 @@
+Respondent	Q1	Q2	Q3	Q4	Q5	Q6	Q7	Q8	Degree	AssistYN	Assistantship	Hours	College
+1	3	2	2	2	2	3	3	2	PhD	Yes			
+2	3	4	5	4	1	4	4	3	PhD	Yes	GRA	20	College of Agricultural and Environmental Sciences
+3	5	5	5	5	5	5	5	5	PhD	Yes	GRA		College of Agricultural and Environmental Sciences
+4	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Agricultural and Environmental Sciences
+5	5	4	4	2	3	5	5	5	PhD	Yes	GRA	20	College of Agricultural and Environmental Sciences
+6	4	3	3	3	2	5	5	5	Masters	Yes	GTA		College of Agricultural and Environmental Sciences
+7	4	5	4	3	4	4	5	3	PhD	Yes	GRA	16	College of Agricultural and Environmental Sciences
+8	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Agricultural and Environmental Sciences
+9	3	5	3	3	3	5	5	4	PhD	Yes	GRA	18	College of Agricultural and Environmental Sciences
+10	3	2	2	3	2	5	5	5	Masters	Yes	GRA	17	College of Agricultural and Environmental Sciences
+11	5	5	4	3	3	5	5	5	PhD	Yes	GRA	20	College of Agricultural and Environmental Sciences
+12	5	5	5	5	5	5	5	5	PhD	Yes	GLA,GRA	13	College of Agricultural and Environmental Sciences
+13	2	4	2	3	5	5	5	5	PhD	Yes	GTA,GRA	20	College of Agricultural and Environmental Sciences
+14	3	3	3	2	1	3	3	5	Masters	Yes	GRA	20	College of Agricultural and Environmental Sciences
+15	5	5	5	5	5	5	5	5	PhD	Yes	GTA,GRA	20	College of Agricultural and Environmental Sciences
+16	5	5	5	5	2	5	5	5	PhD	Yes	GRA	18	College of Agricultural and Environmental Sciences
+17	5	5	5	5	5	2	5	3	PhD	Yes			
+18	5	5	5	5	5	5	4	5	PhD	Yes	GRA		College of Agricultural and Environmental Sciences
+19	4	5	4	3	2	5	5	4	Masters	Yes	GRA		College of Agricultural and Environmental Sciences
+20	4	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Agricultural and Environmental Sciences
+21	4	4	4	5	5	5	5	5	PhD	Yes	GRA	18	College of Agricultural and Environmental Sciences
+22	5	5	5	5	5	5	5	5	PhD	Yes	GLA,GRA	13	College of Agricultural and Environmental Sciences
+23	5	5	5	5	4	5	4	5	PhD	Yes	GTA,GRA	20	College of Agricultural and Environmental Sciences
+24	1	3	2	2	3	4	3	5	Masters	Yes	GRA	Unknown	College of Agricultural and Environmental Sciences
+25	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Agricultural and Environmental Sciences
+26	2	3	2	3	3	3	4	4	Masters	Yes	GRA	20	College of Agricultural and Environmental Sciences
+27	3	3	3	4	3	5	4	5	PhD	Yes	GLA	20	College of Agricultural and Environmental Sciences
+28	5	5	5	5	3	5	5	5	PhD	Yes	GRA	16	College of Agricultural and Environmental Sciences
+29	4	5	2	5	5	5	5	5	Masters	Yes	GRA		College of Agricultural and Environmental Sciences
+30	3	5	4	1	2	5	3	4	Masters	Yes	GRA	20	College of Agricultural and Environmental Sciences
+31	5	2	4	4	5	4	4	5	PhD	Yes	GRA	20	College of Agricultural and Environmental Sciences
+32	4	5	4	2	3	5	4	5	PhD	Yes	GTA,GRA	18	Office of Research
+33	4	5	3	5	5	5	5	5	PhD	Yes	GTA	20	Mary Frances Early College of Education
+34	1	2	2	2	2	5	2	5	PhD	Yes	GA	18	Mary Frances Early College of Education
+35	2	4	3	1	4	5	3	3	PhD	Yes	GRFA	20	Franklin College of Arts and Sciences
+36	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Public Health
+37	2	2	2	2	0	5	4	5	PhD	Yes	GTA,GRA	20	College of Public Health
+38	4	5	3	4	3	5	4	4	PhD	No			
+39	2	2	2	2	3	4	3	4	PhD	Yes	GA	13	Mary Frances Early College of Education
+40	3	5	3	5	5	5	5	2	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+41	2	3	5	3	0	5	5	5	PhD	ExternalOther			
+42	0	5	2	0	0	5	3	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+43	5	5	5	3	5	5	5	5	PhD	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+44	5	5	2	5	2	5	5	2	PhD	Yes	GTA,GRA	20	College of Veterinary Medicine
+45	5	5	5	5	5	5	5	5	PhD	Yes	GRA	19	Franklin College of Arts and Sciences
+46	2	2	2	2	5	2	5	5	PhD	Yes	GTA	13	Graduate School
+47	2	3	2	2	5	5	5	5	PhD	Yes	GRA	More than 20	College of Veterinary Medicine
+48	1	4	4	0	4	5	0	2	PhD	Yes	GTA	17	Franklin College of Arts and Sciences
+49	1	1	1	0	0	5	4	4	PhD	Yes	GLA	19	Franklin College of Arts and Sciences
+50	5	5	5	5	5	5	5	5	PhD	Yes	GRA	18	Franklin College of Arts and Sciences
+51	3	4	3	5	5	5	5	3	PhD	Yes	GLA,GRA	18	Franklin College of Arts and Sciences
+52	5	5	5	1	2	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+53	3	4	5	4	5	5	5	5	PhD	Yes	GLA,GRA	18	Franklin College of Arts and Sciences
+54	5	5	5	3	5	5	5	5	PhD	Yes	GRA	16	College of Engineering
+55	5	5	5	5	0	5	0	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+56	5	3	2	0	5	5	5	5	PhD	Yes	GRA		
+57	5	5	5	5	5	5	5	5	PhD	Yes	GRA	19	Franklin College of Arts and Sciences
+58	5	5	5	5	5	5	5	5	Masters	No			
+59	0	0	0	2	4	1	4	5	PhD	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+60	5	5	5	5	5	5	5	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+61	5	5	5	5	2	3	1	5	PhD	Yes	GTA	More than 20	Franklin College of Arts and Sciences
+62	3	5	2	3	1	5	2	5	PhD	Yes	GRA	20	Odum School of Ecology
+63	3	5	5	4	5	5	5	5	PhD	ExternalOther			
+64	0	2	2	0	0	5	2	5	PhD	Yes	GTA	17	Franklin College of Arts and Sciences
+65	5	5	5	3	5	5	5	5	PhD	Yes	GA	20	Franklin College of Arts and Sciences
+66	2	3	2	0	1	5	1	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+67	5	5	5	1	5	5	1	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+68	5	5	5	5	5	5	5	5	PhD	Yes	GTA,GRA		
+69	4	5	5	2	5	5	5	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+70	5	5	5	5	5	5	5	5	Masters	No			
+71	0	0	0	0	0	0	0	3	Masters	No			
+72	5	5	5	5	5	5	5	5	PhD	Yes	GRA	13	College of Family and Consumer Sciences
+73	0	0	0	0	1	5	4	5	Masters	Yes	GA	13	Terry College of Business
+74	4	5	5	2	5	5	5	5	PhD	Yes	GRA	17	Franklin College of Arts and Sciences
+75	0	0	5	0	3	5	0	5	Masters	Yes	GRA	13	College of Family and Consumer Sciences
+76	1	4	2	2	3	5	3	5	PhD	Yes	GTA,GRA	20	Odum School of Ecology
+77	1	5	1	1	1	5	1	3	PhD	Yes	GTA	17	Franklin College of Arts and Sciences
+78	5	3	4	4	5	5	4	5	PhD	Yes	GTA,GRA	18	Odum School of Ecology
+79	5	5	5	4	5	5	5	5	PhD	Yes	GRA	18	Franklin College of Arts and Sciences
+80	3	1	3	2	5	5	5	5	PhD	Yes	GTA,GLA	20	Franklin College of Arts and Sciences
+81	5	4	5	3	3	5	5	5	Masters	Yes	GTA	18	Franklin College of Arts and Sciences
+82	5	5	5	5	5	5	5	5	PhD	Yes	GTA	20	College of Veterinary Medicine
+83	5	5	5	5	5	5	5	5	PhD	Yes	GRA	More than 20	College of Veterinary Medicine
+84	5	5	5	4	4	5	5	5	PhD	Yes	GRA	20	College of Public Health
+85	4	4	4	3	4	5	3	3	Masters	Yes	GRA	17	Odum School of Ecology
+86	5	5	5	5	5	5	4	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+87	0	0	3	2	4	5	1	0	PhD	Yes	GRFA	13	Franklin College of Arts and Sciences
+88	0	1	0	1	4	2	3	2	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+89	0	2	0	3	0	0	5	3	PhD	Yes	GRA	18	Franklin College of Arts and Sciences
+90	5	5	5	5	5	5	5	5	Masters	Yes	GRA	20	Odum School of Ecology
+91	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+92	2	2	4	1	5	5	5	4	PhD	Yes	GTA	20	Terry College of Business
+93	5	5	5	5	5	5	5	5	PhD	Yes	GTA	13	College of Family and Consumer Sciences
+94	0	0	0	0	0	5	0	3	Masters	Yes	GTA	13	College of Family and Consumer Sciences
+95	3	3	5	5	5	5	5	5	Masters	Yes	GA	Unknown	Franklin College of Arts and Sciences
+96	0	0	0	0	4	5	5	5	PhD	Yes	GTA,GRA	20	Mary Frances Early College of Education
+97	5	5	4	5	4	5	2	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+98	5	5	5	5	5	5	5	5	PhD	Yes	GTA,GRA	20	College of Veterinary Medicine
+99	3	5	4	4	0	5	5	5	PhD	Yes	GRA	17	College of Agricultural and Environmental Sciences
+100	5	5	5	5	5	5	5	5	PhD	Yes	GRA	Unknown	College of Veterinary Medicine
+101	3	4	3	3	4	5	5	5	PhD	Yes	GA	20	Franklin College of Arts and Sciences
+102	5	5	5	5	5	5	5	5	Masters	Yes	GRA	18	Franklin College of Arts and Sciences
+103	5	5	5	5	3	5	5	5	PhD	Yes	GTA	20	College of Pharmacy
+104	2	3	2	4	2	3	1	4	PhD	Yes		20	Franklin College of Arts and Sciences
+105	2	3	3	3	5	5	5	5	PhD	Yes	GTA	18	College of Pharmacy
+106	5	5	5	5	0	5	5	5	PhD	Yes	GTA,GRA	20	Franklin College of Arts and Sciences
+107	0	0	0	0	0	5	2	5	Masters	No			
+108	4	1	5	5	2	5	3	5	PhD	Yes	GTA	18	Odum School of Ecology
+109	4	4	3	4	4	5	4	3	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+110	5	5	5	5	5	3	5	5	PhD	No			
+111	2	5	4	4	3	5	3	4	PhD	Yes	GTA,GRA	18	Odum School of Ecology
+112	2	4	4	3	3	5	2	4	PhD	Yes	GTA	13	College of Family and Consumer Sciences
+113	5	5	5	5	5	5	5	5	PhD	Yes	GTA	18	Odum School of Ecology
+114	5	5	5	3	4	5	3	5	PhD	Yes	GRA	20	Other
+115	1	4	2	1	2	5	3	4	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+116	5	5	5	5	5	5	5	5	PhD	Yes	GRA	More than 20	College of Public Health
+117	5	5	5	5	5	5	3	5	PhD	Yes	GTA	20	
+118	5	5	5	3	4	5	5	5	PhD	No			
+119	2	4	4	2	5	5	5	5	PhD	Yes	GTA,GRA	14	Franklin College of Arts and Sciences
+120	5	5	5	3	2	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+121	1	1	1	1	1	5	3	3	Masters	Yes	GTA,GRA	17	Franklin College of Arts and Sciences
+122	5	5	4	1	3	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+123	5	5	5	5	5	5	5	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+124	5	5	5	2	4	5	4	5	PhD	Yes	GRA		College of Pharmacy
+125	3	3	4	3	3	5	5	5	PhD	Yes	GTA	17	Franklin College of Arts and Sciences
+126	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+127	5	5	5	5	5	5	5	5	Masters	Yes	GTA	13	Franklin College of Arts and Sciences
+128	5	5	5	0	5	5	1	1	PhD	Yes	GRA	20	College of Veterinary Medicine
+129	4	5	4	4	4	5	4	5	PhD	Yes	GTA	17	Franklin College of Arts and Sciences
+130	4	4	5	3	4	3	3	5	PhD	Yes	GRA		Franklin College of Arts and Sciences
+131	5	4	5	5	4	5	4	3	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+132	2	5	2	1	2	5	5	3	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+133	5	5	5	1	5	5	5	5	PhD	No			
+134	5	5	5	5	2	5	5	5	PhD	Yes	GRA	16	College of Agricultural and Environmental Sciences
+135	4	3	3	4	5	5	5	5	PhD	Yes	GRA	19	Franklin College of Arts and Sciences
+136	5	5	5	5	5	5	5	5	PhD	Yes	GRA	18	College of Agricultural and Environmental Sciences
+137	4	4	4	1	1	5	1	5	PhD	Yes	GRA	20	Office of Research
+138	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Agricultural and Environmental Sciences
+139	5	3	4	3	3	5	3	4	Masters	Yes	GTA	18	Odum School of Ecology
+140	5	5	5	5	4	5	5	5	PhD	Yes	GRA		College of Engineering
+141	1	1	1	1	3	5	3	4	Masters	Yes	GRA	Unknown	College of Agricultural and Environmental Sciences
+142	3	5	5	3	2	5	5	5	PhD	No			
+143	2	2	1	3	5	5	2	5	PhD	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+144	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Pharmacy
+145	5	5	2	1	3	5	5	2	PhD	Yes	GTA,GRA	Unknown	Franklin College of Arts and Sciences
+146	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Pharmacy
+147	0	5	5	1	5	5	3	5	PhD	Yes	GTA,GRA	20	College of Family and Consumer Sciences
+148	4	5	5	4	3	5	5	5	PhD	Yes	GTA,GLA	20	Franklin College of Arts and Sciences
+149	5	5	5	5	5	5	0	5	PhD	Yes	GRA	18	Franklin College of Arts and Sciences
+150	1	4	2	3	2	5	5	5	PhD	Yes	GRA	Unknown	Franklin College of Arts and Sciences
+151	1	1	1	1	1	3	4	5	PhD	Yes	GRA	Unknown	Unknown
+152	5	5	5	3	4	5	5	3	PhD	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+153	5	5	5	5	5	5	5	5	PhD	Yes	GRA	Unknown	Graduate School
+154	3	2	1	0	2	2	1	1	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+155	3	5	5	0	2	5	5	5	PhD	Yes	GTA,GRA	20	Franklin College of Arts and Sciences
+156	5	5	5	5	5	5	5	5	PhD	Yes	GTA,GRA	20	College of Pharmacy
+157	1	5	1	5	1	5	2	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+158	5	5	5	5	5	5	5	5	PhD	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+159	2	4	3	3	3	5	4	4	PhD	Yes	GRA	16	Franklin College of Arts and Sciences
+160	5	5	4	4	5	5	3	5	Masters	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+161	4	4	3	2	5	5	5	5	PhD	Yes	GRA		Franklin College of Arts and Sciences
+162	1	1	1	1	0	5	1	5	PhD	Yes	GLA	18	Franklin College of Arts and Sciences
+163	5	1	5	5	5	5	5	1	PhD	Yes	GRA	More than 20	College of Veterinary Medicine
+164	2	1	3	4	4	5	4	0	PhD	Yes	GA	20	Unknown
+165	5	5	5	5	5	5	0	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+166	5	5	5	4	5	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+167	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Veterinary Medicine
+168	5	5	5	1	2	5	5	5	PhD	Yes	GTA,GRA	Less than 13	College of Agricultural and Environmental Sciences
+169	5	5	5	5	5	5	4	5	PhD	Yes	GRA	20	College of Veterinary Medicine
+170	5	5	5	5	5	5	5	5	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+171	4	5	4	5	3	5	5	5	PhD	Yes	GLA,GRA	20	Franklin College of Arts and Sciences
+172	5	5	5	3	5	5	3	5	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+173	3	3	3	3	3	5	4	5	PhD	Yes	GTA	18	Odum School of Ecology
+174	5	5	5	5	5	5	5	5	PhD	Yes	GTA	Unknown	Franklin College of Arts and Sciences
+175	2	3	2	3	2	5	5	5	Masters	Yes	GTA	20	Franklin College of Arts and Sciences
+176	5	5	5	3	4	5	5	5	Masters	Yes	GA	15	Franklin College of Arts and Sciences
+177	5	5	5	5	5	5	5	5	PhD	Yes	GTA	16	Franklin College of Arts and Sciences
+178	2	5	1	1	0	5	4	5	PhD	Yes	GTA	19	Franklin College of Arts and Sciences
+179	5	5	5	5	3	5	5	5	PhD	ExternalOther			
+180	5	4	4	5	4	5	5	5	PhD	Yes	GTA,GLA	18	Franklin College of Arts and Sciences
+181	1	1	1	1	3	1	2	1	PhD	Yes	GRA	20	Graduate School
+182	5	5	4	3	5	5	5	5	PhD	Yes	GTA	Less than 13	Franklin College of Arts and Sciences
+183	1	3	2	2	2	5	4	5	Masters	Yes	GA	14	Graduate School
+184	5	5	5	5	5	5	5	5	PhD	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+185	5	5	5	5	5	5	5	5	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+186	5	5	5	1	3	5	5	5	PhD	Yes	GTA	Unknown	College of Pharmacy
+187	4	4	4	5	4	5	4	4	Masters	Yes	GTA	20	Franklin College of Arts and Sciences
+188	1	4	3	1	5	5	5	1	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+189	0	3	1	1	1	5	2	2	PhD	Yes	GRA	18	Odum School of Ecology
+190	5	5	5	5	5	5	5	5	PhD	Yes	GTA		
+191	5	5	5	3	3	5	5	5	PhD	Yes	GRA	16	Franklin College of Arts and Sciences
+192	4	4	3	1	5	5	3	5	PhD	Yes	GRA	20	College of Family and Consumer Sciences
+193	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Veterinary Medicine
+194	2	5	2	4	4	5	4	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+195	5	4	5	3	5	5	2	5	PhD	Yes	GTA	13	College of Family and Consumer Sciences
+196	5	5	5	5	5	5	5	5	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+197	5	5	5	5	5	5	5	5	PhD	Yes	GTA,GLA	20	Franklin College of Arts and Sciences
+198	3	5	4	3	4	5	4	5	PhD	Yes	GTA	16	Franklin College of Arts and Sciences
+199	5	5	5	5	3	5	5	5	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+200	5	5	5	0	3	5	4	5	PhD	Yes	GTA		Franklin College of Arts and Sciences
+201	5	5	5	5	5	5	5	5	PhD	Yes	GTA	16	Franklin College of Arts and Sciences
+202	1	2	4	1	4	5	5	3	PhD	Yes	GRA	20	College of Family and Consumer Sciences
+203	1	3	2	3	2	5	5	5	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+204	0	5	0	5	0	5	5	5	Masters	Yes	GTA,GLA	17	Franklin College of Arts and Sciences
+205	5	5	5	3	3	5	4	5	PhD	Yes	GTA	16	Franklin College of Arts and Sciences
+206	5	4	1	5	3	5	5	5	PhD	Yes	GTA	16	Franklin College of Arts and Sciences
+207	5	4	4	3	1	5	1	4	Masters	Yes	GRA	15	Franklin College of Arts and Sciences
+208	5	5	5	5	3	5	5	5	PhD	Yes	GA	20	Other
+209	4	5	4	2	5	5	3	5	PhD	Yes	GTA	17	Franklin College of Arts and Sciences
+210	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+211	5	5	5	2	5	5	5	5	PhD	ExternalOther			
+212	5	5	5	1	1	4	1	5	PhD	Yes	GRA	20	Office of Research
+213	1	2	4	1	1	5	5	5	PhD	Yes	GRA	19	College of Agricultural and Environmental Sciences
+214	4	1	5	3	1	5	4	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+215	4	5	5	4	3	5	3	5	PhD	Yes	GRA	20	Mary Frances Early College of Education
+216	5	5	5	5	2	5	5	5	PhD	Yes	GRA	20	College of Engineering
+217	1	5	1	5	1	5	5	5	PhD	Yes	GTA	17	Franklin College of Arts and Sciences
+218	4	5	4	5	5	5	4	5	PhD	No			
+219	5	5	5	5	5	5	5	5	PhD	Yes	GTA,GRA	20	Franklin College of Arts and Sciences
+220	3	3	5	0	5	5	5	5	PhD	Yes	GRA	20	Unknown
+221	5	5	5	5	5	5	5	5	PhD	Yes	GTA	13	College of Family and Consumer Sciences
+222	5	2	5	1	1	4	4	5	PhD	Yes	GRA	20	College of Family and Consumer Sciences
+223	5	5	5	5	5	5	5	5	PhD	Yes	GRA,GRFA	More than 20	College of Engineering
+224	5	5	5	5	5	5	5	5	PhD	Yes	GRA	16	College of Engineering
+225	2	1	0	0	1	3	3	0	PhD	Yes	GRA	14	College of Agricultural and Environmental Sciences
+226	5	5	5	5	5	5	5	5	PhD	Yes	GA	More than 20	Franklin College of Arts and Sciences
+227	5	5	4	5	5	5	5	5	PhD	Yes	GRA		Franklin College of Arts and Sciences
+228	5	5	5	5	5	5	5	5	PhD	Yes	GRA		
+229	0	0	0	0	0	0	0	0	PhD	Yes	GRA	18	College of Engineering
+230	0	2	0	1	0	5	2	5	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+231	5	4	5	4	3	5	5	5	PhD	Yes	GTA,GRA	14	College of Agricultural and Environmental Sciences
+232	3	2	3	3	3	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+233	1	1	2	2	2	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+234	5	5	5	5	5	5	5	5	Masters	Yes	GRA	18	College of Agricultural and Environmental Sciences
+235	3	4	4	2	3	5	4	4	PhD	Yes	GRA	18	Franklin College of Arts and Sciences
+236	5	4	5	3	4	5	4	3	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+237	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Veterinary Medicine
+238	5	5	5	0	0	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+239	2	0	0	1	2	5	3	5	PhD	ExternalOther			
+240	3	5	5	5	3	5	4	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+241	5	5	5	5	5	5	5	5	Masters	Yes	GTA	Unknown	Franklin College of Arts and Sciences
+242	2	3	3	1	4	5	3	4	Masters	Yes	GTA,GRFA	Unknown	Franklin College of Arts and Sciences
+243	0	5	0	0	0	5	0	5	PhD	Yes	GRA		Franklin College of Arts and Sciences
+244	3	3	3	3	1	5	3	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+245	3	1	1	1	1	5	1	4	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+246	0	5	0	0	0	5	0	5	PhD	Yes	GRA		Other
+247	5	5	5	3	5	5	5	5	PhD	Yes	GRA	18	Odum School of Ecology
+248	4	2	4	5	3	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+249	1	5	5	3	1	5	1	5	PhD	Yes	GRA	18	Franklin College of Arts and Sciences
+250	5	5	5	5	5	5	5	5	PhD	Yes	GRA	18	Other
+251	5	5	5	5	5	5	5	5	PhD	Yes	GRA		Franklin College of Arts and Sciences
+252	5	5	5	5	5	5	5	5	PhD	Yes	GRA	18	Other
+253	5	5	5	0	1	5	3	5	PhD	Yes	GTA,GRA	16	Franklin College of Arts and Sciences
+254	4	5	5	4	1	3	1	5	PhD	Yes			Graduate School
+255	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	Other
+256	1	1	1	4	1	5	2	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+257	0	4	3	0	0	0	0	4	PhD	Yes	GRA	20	College of Veterinary Medicine
+258	5	4	5	5	5	5	4	5	PhD	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+259	5	5	5	2	3	5	5	5	PhD	Yes	GTA,GRA	18	Office of Research
+260	4	3	3	3	4	4	2	3	PhD	Yes	GRA	18	Unknown
+261	3	5	2	1	5	5	5	5	PhD	Yes	GRA	Less than 13	Franklin College of Arts and Sciences
+262	4	4	4	4	4	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+263	5	5	1	5	1	5	4	5	PhD	Yes	GRA	16	Franklin College of Arts and Sciences
+264	5	5	5	5	5	5	2	5					
+265	4	5	5	5	5	5	5	5	PhD	Yes			
+266	4	5	5	5	5	5	4	5	PhD	Yes			
+267	5	5	5	5	5	5	5	5	PhD	Yes			
+268	5	5	5	0	0	5	5	5	PhD	Yes			
+269	5	5	5	5	5	3	3	5	PhD	Yes	GA	18	Franklin College of Arts and Sciences
+270	5	5	5	5	5	5	5	5	PhD	Yes			
+271	2	3	2	3	1	5	1	4	PhD	Yes			
+272	5	5	5	5	5	5	5	5	PhD	Yes			
+273	5	5	4	1	1	5	2	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+274	5	4	5	4	5	5	4	5	PhD	Yes	GRA	14	Franklin College of Arts and Sciences
+275	2	4	3	5	5	5	5	2	PhD	Yes	GTA,GRA		Franklin College of Arts and Sciences
+276	3	5	3	2	2	4	1	3	PhD	Yes	GA	Unknown	Franklin College of Arts and Sciences
+277	0	5	1	0	0	5	0	5	PhD	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+278	5	5	5	5	5	5	5	5	PhD	Yes	GRA	Unknown	College of Veterinary Medicine
+279	5	5	5	5	5	5	5	5	PhD	Yes	GRA	More than 20	College of Veterinary Medicine
+280	5	5	5	5	3	5	4	5	PhD	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+281	5	5	5	1	4	5	4	5	PhD	Yes	GRA	More than 20	College of Veterinary Medicine
+282	1	2	2	1	1	5	2	5	Masters	Yes			
+283	0	5	0	0	4	5	0	5	PhD	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+284	5	5	4	1	1	5	5	3	PhD	ExternalOther			
+285	0	5	5	0	2	5	2	5	PhD	Yes	GRA	20	Other
+286	5	5	5	5	5	5	5	5	Masters	Yes	GRA	18	College of Veterinary Medicine
+287	4	3	5	2	1	5	4	3	PhD	Yes	GRA	More than 20	Franklin College of Arts and Sciences
+288	1	5	1	1	3	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+289	5	5	5	4	3	5	4	5	Masters	Yes	GTA	17	Franklin College of Arts and Sciences
+290	5	5	5	5	3	5	5	5	PhD	Yes	GRA	20	College of Engineering
+291	1	4	3	2	1	5	4	5	PhD	Yes	GRA	16	College of Engineering
+292	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	Other
+293	4	2	5	2	1	5	4	5	PhD	Yes	GA	20	Other
+294	0	3	2	0	0	5	3	5	PhD	Yes	GTA,GRA	17	Franklin College of Arts and Sciences
+295	4	5	5	4	3	5	5	5	PhD	Yes	GRA	16	College of Agricultural and Environmental Sciences
+296	1	5	1	3	2	5	5	1	PhD	Yes	GRA	13	Graduate School
+297	1	5	5	1	1	5	5	5	PhD	Yes	GRA	20	College of Veterinary Medicine
+298	5	5	5	3	3	5	5	5	PhD	Yes	GTA,GRA	20	Franklin College of Arts and Sciences
+299	5	5	5	5	2	5	5	5	PhD	Yes	GTA	17	Franklin College of Arts and Sciences
+300	0	0	0	0	4	5	3	4	Masters	Yes	GA		College of Agricultural and Environmental Sciences
+301	5	3	5	2	1	5	4	2	Masters	Yes	GRA	20	Warnell School of Forestry and Natural Resources
+302	5	5	2	2	2	5	2	1	PhD	Yes	GTA	20	Mary Frances Early College of Education
+303	5	5	5	5	5	5	4	5	Masters	Yes	GRA		College of Agricultural and Environmental Sciences
+304	2	5	2	5	5	5	4	5	PhD	Yes	GRA	Unknown	College of Agricultural and Environmental Sciences
+305	2	4	3	1	3	3	2	5	Masters	Yes	GRA	16	Warnell School of Forestry and Natural Resources
+306	1	5	1	2	2	5	5	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+307	1	4	2	1	1	5	1	2	PhD	Yes	GRA	15	College of Engineering
+308	5	5	5	5	5	5	5	5	PhD	Yes	GRA	16	Warnell School of Forestry and Natural Resources
+309	5	5	5	5	4	5	5	5	PhD	Yes	GRA	18	Franklin College of Arts and Sciences
+310	1	5	5	5	2	5	5	5	PhD	Yes	GRA	16	College of Agricultural and Environmental Sciences
+311	5	5	5	5	5	5	5	5	Masters	Yes	GRA	More than 20	College of Agricultural and Environmental Sciences
+312	4	5	5	3	4	5	3	5	PhD	Yes	GRA	16	College of Engineering
+313	3	3	2	4	2	5	3	4	Masters	Yes	GRA	13	School of Public and International Affairs
+314	3	5	3	4	2	4	5	4	PhD	Yes	GRA	13	Franklin College of Arts and Sciences
+315	5	5	5	5	2	5	5	5	PhD	Yes	GRA	15	College of Engineering
+316	5	5	5	5	5	5	4	5	PhD	Yes	GRA	16	College of Agricultural and Environmental Sciences
+317	5	5	5	4	5	5	5	5	PhD	Yes	GRA	20	College of Engineering
+318	5	5	5	4	3	5	5	5	PhD	Yes	GRA	14	Franklin College of Arts and Sciences
+319	5	5	5	5	2	5	4	5	PhD	Yes	GRA	15	College of Engineering
+320	5	5	5	4	5	5	3	5	PhD	Yes	GA	20	Other
+321	5	5	4	4	3	5	5	5	PhD	Yes	GTA,GLA	18	Franklin College of Arts and Sciences
+322	0	0	0	0	0	0	0	5	Masters	No			
+323	3	3	3	4	4	5	5	5	Masters	Yes	GA	13	Grady College of Journalism and Mass Communication
+324	3	5	5	3	5	5	5	5	PhD	Yes	GRA	20	College of Veterinary Medicine
+325	2	2	2	2	2	5	5	5	Masters	Yes	GTA	19	Franklin College of Arts and Sciences
+326	2	4	1	1	2	5	3	5	PhD	Yes	GRA	20	College of Public Health
+327	5	5	5	5	4	5	5	5	PhD	Yes	GRA		College of Agricultural and Environmental Sciences
+328	0	0	0	0	5	0	5	5	PhD	Yes	GRA	13	Mary Frances Early College of Education
+329	3	1	3	2	4	5	1	3	Masters	Yes	GTA,GRFA	Unknown	Franklin College of Arts and Sciences
+330	4	4	5	1	2	2	1	3	PhD	Yes	GRA	20	College of Agricultural and Environmental Sciences
+331	1	5	5	5	1	5	1	5	PhD	Yes	GTA	20	Grady College of Journalism and Mass Communication
+332	2	5	3	3	4	5	4	5	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+333	3	5	4	3	4	5	3	5	PhD	Yes	GTA,GRA	20	Mary Frances Early College of Education
+334	5	5	5	5	5	5	5	5	PhD	Yes	GLA	20	Franklin College of Arts and Sciences
+335	3	5	2	2	2	5	5	5	PhD	Yes	GA	18	Other
+336	0	0	0	0	0	5	3	3	Masters	Yes	GTA	20	College of Engineering
+337	5	5	5	5	1	5	5	5	Masters	Yes	GRA	16	College of Agricultural and Environmental Sciences
+338	1	5	1	5	0	5	5	5	PhD	Yes	GRA	16	College of Agricultural and Environmental Sciences
+339	1	4	1	1	4	5	3	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+340	5	5	5	2	3	5	4	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+341	5	5	5	3	5	5	5	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+342	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	Unknown
+343	1	3	1	2	2	5	1	5	Masters	Yes	GRA	20	College of Agricultural and Environmental Sciences
+344	4	3	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Public Health
+345	5	5	5	5	5	5	4	5	PhD	Yes	GRA	17	College of Agricultural and Environmental Sciences
+346	2	3	2	1	3	4	4	5	Masters	Yes	GA	13	Terry College of Business
+347	4	5	5	1	3	5	1	5	Masters	Yes	GRA	18	Warnell School of Forestry and Natural Resources
+348	3	5	5	0	2	5	0	4	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+349	4	5	2	2	4	5	5	5	PhD	Yes	GTA,GLA,GRA	18	College of Veterinary Medicine
+350	3	5	5	4	5	5	4	5	PhD	Yes	GTA	17	Franklin College of Arts and Sciences
+351	1	5	3	2	3	5	5	5	PhD	Yes	GTA,GRA	Unknown	Franklin College of Arts and Sciences
+352	5	4	5	4	3	5	3	4	PhD	Yes	GTA,GRA	20	College of Veterinary Medicine
+353	3	5	3	3	2	5	1	5	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+354	5	5	5	0	5	5	5	5	PhD	Yes	GTA		Franklin College of Arts and Sciences
+355	5	5	5	5	5	5	5	5	Masters	Yes	GTA	13	Franklin College of Arts and Sciences
+356	0	0	0	0	0	1	1	0	PhD	Yes	GTA	16	Franklin College of Arts and Sciences
+357	5	5	5	2	1	5	5	2	Masters	Yes	GTA	16	College of Engineering
+358	5	5	5	4	5	5	5	5	Masters	Yes	GA	13	Other
+359	5	5	5	5	3	5	5	5	PhD	Yes	GRA,GA	20	Mary Frances Early College of Education
+360	0	0	0	0	0	5	3	4	PhD	Yes	GTA,GRA	20	Mary Frances Early College of Education
+361	3	3	3	1	2	5	5	2	PhD	Yes	GTA	18	Franklin College of Arts and Sciences
+362	5	5	5	5	5	5	1	5	PhD	Yes	GRA	20	College of Veterinary Medicine
+363	0	5	0	0	0	5	1	5	PhD	Yes	GLA	20	Franklin College of Arts and Sciences
+364	5	5	5	1	1	5	5	5	PhD	Yes	GRA	15	College of Agricultural and Environmental Sciences
+365	1	1	1	1	1	5	4	5	PhD	Yes	GRA,GA	20	Warnell School of Forestry and Natural Resources
+366	5	5	5	5	5	5	1	5	Masters	Yes	GRA	More than 20	Warnell School of Forestry and Natural Resources
+367	1	1	1	1	1	5	3	5	PhD	Yes	GTA	17	Franklin College of Arts and Sciences
+368	1	1	1	1	0	5	3	5	Masters	Yes	GTA,GA	13	Grady College of Journalism and Mass Communication
+369	5	5	5	5	5	5	5	5	Masters	Yes	GRA	20	College of Agricultural and Environmental Sciences
+370	3	2	3	0	0	0	0	3	PhD	Yes	GRA	20	College of Veterinary Medicine
+371	5	5	5	2	5	4	1	3	PhD	Yes	GRA	20	College of Veterinary Medicine
+372	2	3	3	2	4	5	5	5	PhD	Yes	GRA	20	College of Public Health
+373	5	5	5	3	3	5	3	5	Masters	Yes	GRA	14	School of Social Work
+374	5	3	5	4	1	5	5	5	Masters	Yes	GRA	17	Franklin College of Arts and Sciences
+375	3	5	5	5	5	5	5	5	PhD	Yes	GRA	20	Other
+376	5	5	5	4	5	5	3	5	Masters	Yes	GA	Less than 13	School of Public and International Affairs
+377	5	5	5	5	5	5	5	5	PhD	Yes	GTA,GRA	13	School of Public and International Affairs
+378	5	5	5	5	5	5	5	5	Masters	Yes	GTA	17	Franklin College of Arts and Sciences
+379	1	1	3	1	1	5	5	5	Masters	Yes	GRA	13	Franklin College of Arts and Sciences
+380	5	5	3	3	5	5	5	5	Masters	Yes	GTA	17	Franklin College of Arts and Sciences
+381	4	5	5	3	5	5	3	4	PhD	Yes	GTA,GA	20	Mary Frances Early College of Education
+382	5	5	5	5	5	5	5	5	Professional degree	No			
+383	5	5	5	4	5	5	3	5	PhD	Yes	GRA	20	College of Veterinary Medicine
+384	5	4	5	4	4	5	5	5	Masters	Yes	GRA	17	College of Agricultural and Environmental Sciences
+385	1	3	1	1	1	5	5	5	Masters	Yes	GRA	17	Franklin College of Arts and Sciences
+386	4	4	3	5	4	5	5	5	PhD	No			
+387	1	2	3	1	5	5	3	2	PhD	Yes	GTA,GRA	17	Franklin College of Arts and Sciences
+388	5	4	5	3	4	5	5	5	PhD	Yes	GTA	17	Franklin College of Arts and Sciences
+389	5	5	5	5	5	5	5	5	PhD	Yes	GTA,GLA,GA	20	Franklin College of Arts and Sciences
+390	2	0	2	3	4	2	3	4	Masters	No			
+391	4	3	4	5	5	5	5	5	Masters	No			
+392	4	5	5	1	1	4	3	4	Masters	Yes	GRA	Less than 13	College of Environment and Design
+393	5	5	5	2	4	5	5	5	PhD	Yes	GRA		Franklin College of Arts and Sciences
+394	5	5	3	3	0	5	5	5	Masters	Yes	GTA	13	College of Environment and Design
+395	5	5	5	2	4	5	5	5	Masters	Yes	GRA	13	School of Public and International Affairs
+396	5	5	5	2	5	5	3	2	PhD	Yes	GRA	18	Franklin College of Arts and Sciences
+397	5	5	5	0	0	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+398	5	5	5	5	5	5	5	5	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+399	2	2	3	2	3	5	3	4	PhD	Yes	GTA,GRA	20	Mary Frances Early College of Education
+400	1	5	1	1	4	5	1	5	PhD	Yes	GRA	18	Odum School of Ecology
+401	2	5	4	2	2	4	2	4	PhD	Yes	GA	Unknown	Franklin College of Arts and Sciences
+402	2	3	2	1	5	5	4	4	PhD	Yes	GTA,GRA,GRFA	20	Franklin College of Arts and Sciences
+403	4	5	3	5	4	5	4	5	Masters	Yes	GRA	16	College of Engineering
+404	4	5	5	5	4	5	1	5	PhD	Yes	GRA	19	College of Veterinary Medicine
+405	3	5	5	5	4	5	4	5	PhD	Yes	GRA,GRFA	20	College of Veterinary Medicine
+406	5	5	5	3	5	5	5	5	Masters	Yes	GRA	Unknown	College of Veterinary Medicine
+407	5	4	4	5	1	5	3	3	PhD	Yes	GRA	20	College of Veterinary Medicine
+408	3	5	4	4	4	5	5	4	PhD	Yes	GRA		College of Veterinary Medicine
+409	4	5	4	5	5	5	4	5	Masters	Yes	GA	20	College of Veterinary Medicine
+410	5	5	5	5	5	5	5	5	PhD	Yes	GRA	17	College of Engineering
+411	4	4	4	3	3	5	5	5	PhD	Yes	GRA	16	College of Engineering
+412	5	3	4	5	2	5	5	4	PhD	Yes	GTA	20	Franklin College of Arts and Sciences
+413	5	5	5	4	3	3	2	3	Masters	Yes	GA	Unknown	College of Veterinary Medicine
+414	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	College of Veterinary Medicine
+415	5	5	5	5	5	5	5	5	PhD	Yes	GRA	More than 20	College of Veterinary Medicine
+416	5	5	0	0	0	5	5	5	PhD	Yes	GRA	16	Franklin College of Arts and Sciences
+417	2	4	3	3	5	5	5	5	Masters	Yes	GA	20	College of Veterinary Medicine
+418	1	5	1	3	2	5	5	5	PhD	Yes	GRA	20	School of Public and International Affairs
+419	2	2	2	2	2	5	5	5	Masters	Yes	GTA,GLA	18	Odum School of Ecology
+420	5	5	5	5	5	5	5	5	PhD	Yes	GRA	Less than 13	Franklin College of Arts and Sciences
+421	0	0	0	0	3	4	1	4	Masters	Yes			
+422	5	5	5	4	1	5	4	5	PhD	Yes			
+423	5	5	5	5	3	5	5	0	PhD	Yes			
+424	5	5	5	5	5	5	5	5	PhD	Yes	GTA	20	College of Veterinary Medicine
+425	4	5	3	3	5	5	5	5	PhD	Yes			
+426	2	4	4	0	0	5	1	4	Masters	Yes	GRA	20	Unknown
+427	4	5	2	4	0	5	5	3	PhD	Yes	GA	Less than 13	Mary Frances Early College of Education
+428	1	3	2	3	5	5	5	5	PhD	Yes	GLA	20	Franklin College of Arts and Sciences
+429	2	4	2	0	1	3	0	5	Masters	Yes	GRA	20	
+430	0	0	0	5	5	5	5	5	Masters	Yes	GA	13	Terry College of Business
+431	5	5	5	5	5	5	5	5	PhD	Yes	GRA	17	Franklin College of Arts and Sciences
+432	5	5	5	5	5	5	5	0	PhD	Yes	GRA	20	College of Engineering
+433	5	5	5	5	5	5	5	5	Masters	Yes	GRA		College of Veterinary Medicine
+434	5	5	5	5	1	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+435	5	4	4	5	3	5	4	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+436	5	5	5	5	5	5	4	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+437	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	Other
+438	5	5	5	5	5	5	0	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+439	3	5	4	5	3	5	3	4	PhD	Yes	GRA	18	Franklin College of Arts and Sciences
+440	5	5	5	5	5	5	5	5	PhD	Yes	GRA	20	Franklin College of Arts and Sciences
+441	3	5	2	5	2	5	3	5	PhD	Yes	GTA,GRA	13	Mary Frances Early College of Education
+442	4	4	5	5	2	4	3	5	PhD	Yes	GRA	18	Franklin College of Arts and Sciences
+443	5	5	5	5	1	5	4	5	PhD	Yes			
+444	5	2	2	2	1	5	2	5	PhD	Yes	GRA	Unknown	Franklin College of Arts and Sciences
+445	5	5	5	5	4	5	5	5					
+446	4	5	4	3	5	5	3	5	PhD	Yes			
+447	5	4	4	4	5	5	4	5	Masters	ExternalOther			
+448	5	5	4	4	4	5	5	5	PhD	Yes	GTA	20	Mary Frances Early College of Education
+449	5	5	5	5	5	5	5	5	PhD	Yes	GTA	18	Franklin College of Arts and Sciences

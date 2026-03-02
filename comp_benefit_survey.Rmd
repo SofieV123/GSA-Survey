@@ -1,0 +1,444 @@
+---
+title: "Compensation and Benefits Survey"
+author: "Sofie Varriano"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background and Survey Structure
+
+This was a compensation and benefits survey that was sent to graduate students on behalf of GSA (specifically the Advocacy Committee) during the 2024-2025 school year through Qualtrics. The responses to this survey formed the basis for the higher pay resolution that was subsequently written, voted on, and passed during spring semester of the 2024-2025 school year.
+
+This survey asked graduate students the following:
+
+> On a scale from 0-5, where 0 is the least beneficial, and 5 is the most beneficial, how important or beneficial would the following changes to graduate student pay and compensation be to you?
+
+> 1.  Expanding benefits of current dental and vision plans available.
+> 2.  Increasing current subsidy for medical insurance coverage offered.
+> 3.  Offering a subsidy for dental insurance coverage.
+> 4.  Providing additional insurance benefits (e.g., life insurance, accident insurance, critical/terminal illness insurance, dismemberment insurance).
+> 5.  Providing employer-associated retirement benefits (e.g., 403b plans, health savings accounts, etc.).
+> 6.  Matching graduate student worker stipends with the cost of living in Athens, GA.
+> 7.  Increasing pay rate transparency across and within departments (e.g., reissuing offer letters every year, publishing pay rate percentages on department websites, etc.).
+> 8.  Reduced or subsidized student fees.
+
+Respondents were also asked for the following demographic information:
+
+> 1.  Degree you are pursuing
+> 2.  Whether you are on an assistantship or not.
+> 3.  If known, what type of graduate assistantship you have.
+> 4.  If known, the contracted hours for your primary assistantship
+> 5.  What academic college or primary institute your degree is housed in.
+
+Students also had space to add their thoughts about compensation and benefits in general, which will be copy and pasted at the end of this document. The full code used to generate all figures and numbers will be included at the end of this document.
+
+## Response Summary
+
+There were 449 responses collected from graduate students.The majority of these were from PhD students (80%). Almost all respodents were on assistantships (94.2%), which included Graduate Research Assistantships, Graduate Teaching Assistantships, Graduate Lab Assistantships, and Graduate Research Fellow Assistantships. Of these, Gradudate Research Assistantships made up more than half of the assistantships.
+
+```{r echo=FALSE, message=FALSE}
+library(dplyr)
+library(knitr)
+
+survey = read.table("C:/Users/sav61051/OneDrive - University of Georgia/Desktop/comp_benefit_survey.txt",
+                    sep = "\t", header = T)
+survey$N = 1
+survey = survey %>% 
+  mutate(College = case_when(College == "" ~ "Unknown",
+                             .default = as.character(College)))
+survey_demo.d = survey %>% 
+  group_by(Degree) %>% 
+  summarise(N = sum(N)) %>% 
+  ungroup() %>% 
+  mutate(Percent = (N/sum(N))*100)
+survey_demo.d = survey_demo.d %>% 
+  mutate(Degree = case_when(Degree == "" ~ "Unknown",
+                            .default = as.character(Degree)))
+kable(survey_demo.d, caption = "Respondents by degree")
+```
+
+Seventeen colleges or primary institutions were represented by respondents. The college with the most respondents was Frabklin (41.6% of total respondents), follwed by the College of Ag (12.25%) and College of Vet Med (8.2%).
+
+```{r echo=FALSE, message=FALSE}
+library(ggplot2)
+survey_demo.c = survey %>% 
+  group_by(College) %>% 
+  summarise(N = sum(N)) %>% 
+  ungroup() %>% 
+  mutate(Percent = (N/sum(N))*100)
+survey_demo.c = survey_demo.c %>% 
+  mutate(College = case_when(College == "Unknown" ~ "Other",
+                             .default = as.character(College)))
+pi.c = ggplot(survey_demo.c, aes(x = "", y = N, fill = College)) +
+  geom_col(color = "black") +
+  coord_polar(theta = "y") +
+  labs(title = "Respondents by College") +
+  theme_void()
+plot(pi.c)
+```
+
+When asked to rate how beneficial changes to gradudate student compensation and benefits would be, where 5 was the most beneficial and 0 was the least beenficial, students overall said that subsidising medical coverage, matching stipends to current cost of living in Athens, GA, and reducing or subsidizing student fees would be the most beneficial.
+
+```{r echo=FALSE, message=FALSE}
+library(tidyverse)
+survey_q.l = survey[,1:9] %>% 
+  pivot_longer(cols = Q1:Q8)
+bar.q = ggplot(survey_q.l, aes(x = name, y = value)) +
+  geom_boxplot() +
+  labs(title = "Responses Overall (n = 449)",
+       x = "Question",
+       y = "Scale") +
+  theme_bw()
+plot(bar.q)
+```
+
+These three priorities were subsequently reflected in the compensation and benefits resolution that was written, voted on, and passed in spring of 2025. To quote the resolution:
+
+> 21. NOW, THEREFORE BE IT RESOLVED, the Graduate Student Association acknowledges the need for a higher minimum compensation for graduate student workers at the University of Georgia; and,
+> 22. THEREFORE, BE IT FURTHER RESOLVED, the Graduate Student Association acknowledges the need to adjust the minimum stipend with inflation every fiscal year; and,
+> 23. THEREFORE, BE IT FURTHER RESOLVED, the Graduate Student Association urges the University of Georgia to commit to paying all graduate student workers across all campuses a stipend that matches the cost of living; and,
+> 24. THEREFORE, BE IT FURTHER RESOLVED, the Graduate Student Association urges the University of Georgia to work with the University System of Georgia Chancellor and the Chair of the Board of Regents to commit to full coverage of student fees for all graduate students; and,
+> 25. THEREFORE, BE IT FURTHER RESOLVED, the Graduate Student Association urges the University of Georgia to commit to full coverage of the Health Insurance Premium Waivers; and,
+> 26. THEREFORE, BE IT FURTHER RESOLVED, the Graduate Student Association urges the University of Georgia to require every department to publish their graduate assistantships annual rates and their minimum student percentage rates on the Graduate School website.
+
+## Written Comments
+
+The following are responses that students wrote in the provided space on the survey. They have been separated by topic below. All submitted responses are included.
+
+### On Increasing Graduate Student Stipends
+>Our compensation is absolutely not a livable wage and there is no way to work a second job given the amount of time our jobs require.  
+
+>An increase in graduate student stipends is desperately needed by the UGA community. Many graduate students are unable to pay bills every month, taking on credit card and student loan debt in the process. Increased stipends, increased health benefits, and other benefits would be a welcome addition to make graduate students feel valued and able to make ends meet. 
+
+>A raise in grad stipends will help alot
+
+>They should be an increase in graduate student stipends 
+
+>Everyone always wants more stuff. Honestly, we are already compensated fairly.
+
+>The rent is Athens is crazy and as a PhD student it has been extremely difficult to keep up with the increasing rent with my little stipend. Further I am told that my department pays the least  on UGA athens campus so it is extremely difficult to sustain in Athens
+
+>Having graduate student take-home pay be in line with the rising cost of living in Athens would be invaluable to improving the well-being of countless graduate students on campus. It could also be helpful if, at the very least, all colleges and departments paid their graduate students 20-hour assistantships. It would also be helpful for the colleges who offer relatively lower base pay rates to be required to match the base rates of higher-paying colleges within the university -- I don't know how feasible that is, but there are certain colleges that seem to not only offer among the lowest base rates out of all UGA colleges, but also do not pay their graduate students 20-hour assistantships by default (instead paying them 13- or 15-hour asssistantships unless their PI's can bring their salaries up with grant money -- which is extremely difficult for junior faculty -- not covering summer months, etc.). Making graduate student take-home pay at least near what a liveable wage is in Athens, as well as somehow encouraging lower-paying programs to shape up to match the stipends of the better-paying programs at the university, would help tremendously.
+
+>We are poor and work hours that extend far beyond what we are compensated for. We should be able to afford to live and not just scrape by
+
+>I think increasing Stipends would be amazing and life changing
+
+>making graduate stipends fairly consistent between departments (raising the stipend of other departments)
+
+>Any of these would definitely improve my life, but increasing income would be huge and offer flexibility in terms of how students meet thier cost of living. 
+
+>It is very difficult to keep up with the cost of living these days. I am putting myself into debt just trying to get paycheck to paycheck 
+
+>Having everything would be great of course. Since many of us graduate students, especially in the life sciences, are here for 5.5 years on average and without any significant raises during that period, at least matching cost of living is essential. 
+>I would say just increasing the yearly salary would be extremely helpful.
+
+>Current graduate student stipend is hard to live off of as a sole income, many graduate students I know including myself need to supplement with a second job or private tutoring to afford the cost of living. Student fees are very expensive for graduate students for facilities we may not even use (ex: the campus gym, since many graduate students do not use it or have their own separate gym membership) 
+
+>I love Athens, but it is very hard to match the cost of living here given the current grad stipends. Last year, I made good 30% of my annual income in June/July alone by pursuing full-time summer work. It’s hard to match that during the school year while being a full-time student.
+
+>the MIT cost of living calculator says $45k for Athens, GA!
+
+>The graduate student stipend should also be paid for the entire duration of the month and not just based on the working number of days. For example, people who are only on TA based stipend like me don't get paid for the entire month during May and August. They keep saying that the number of working days as a TA are only for 10 days so you will only be paid for 10 days during those months. Imagine me being only paid $800 per month. Being an international graduate student, I can't even afford to work else where based on my visa restrictions. How unfair is this?
+
+>I want to emphasize just how underpaid graduate students are. Obviously, the tuition waver is valuable, but it should not be considered as part of our pay. The reality is that we are not paid enough to live comfortably in Athens without getting another job or source of income. 
+
+>I've freelanced to make ends meet each year of my graduate program, which has pushed my graduation time back by 2 years. Working 60+ hour weeks for so many years has led to burn out and it's very difficult now to find the time and energy to do the extra work of applying for jobs and going on the job market. The low pay compared to cost of living in Athens and very limited exemptions from GA-ships puts UGA graduate students at a disadvantage while they're students and on the job market. 
+
+>We deserve better!! Paying rent nowadays in Athens is impossible, specially for international students since we can’t work outside campus/extra hours. The apartment where I lived last year was $1,00, a new company bought it and  they are charing now $2,500!!(on Pope st, it is called now The Butler). How are we supposed to live with our salaries!? We deserve a pay raise so at least we can afford rent. And of course, pay less academic fees.
+
+>Thank you for taking action to make this survey. We need to fight for fair wages and socialized health care!
+
+>Costs are going up by the day and each day reassures that it will get only worse. I can't survive on current payments.
+
+>As the rent goes up every year, our salary and benefits should increase accordingly. In addition, dental treatment is very expensive, and dental insurance is not cheap too. And we can only use the insurance after we have bought it for at least half a year. So I also hope the school can help us solve the problem of dental treatment. Thank you!
+
+>Increased wages for TA PhD students, Consider students with dependents for additional stuoend
+
+>Paying graduate students based on reality. Working more than 40 hr/week with 0.35 FTE is not only unfair but against the law. Overworked, underpaid. At least pay them based on 0.5 FTE. Department of Poultry Science is one of these departments that does that.
+
+>everything listed here is important, but one item is overwhelmingly the most important: Please pay us more.  Ideally, pay us more according to a metric tied to cost of living.  But everything else aside, please pay us more.
+
+>I currently do not make enough money to put food on my table. I have taken out thousands of dollars of student loans in an effort to last long enough to graduate, but due to everyday issues - car troubles, emergency medical procedures, etc. - I am never able to make budget. I try my best to eat cheaply and be cautious with my money, but I often have to go out to get cheap (bad for my health) fast food because my workload doesn't allow me the time to prepare at-home meals for myself and family. A bit more money for food would go a long way.
+
+>Need a pay raise.
+
+>Offering reasonable stipend amount in living means.
+
+>Some cases may be evaluated individually. For example, as a single mom of a 5-year-old, my assistantship must cover both our expenses, which has been challenging. More flexibility in subsidies would be great 
+
+>Departments should be paying at minimum the rate that Life Sciences has deemed the minimum necessary stipend. The stipend levels for physical science and humanities is way too low. Not only is it inequitable, but it is also unlivable and not competitive with other schools. If UGA is really supposed to be the birth place of higher education and investing in the next generation of society's best, we need to give graduate and professional students a living wage.
+
+>im working two jobs to stay afloat which makes my phd work extremely hard. I need a larger stipend to put out good research for the university 
+
+>Honestly, I feel like having a meal plan be part of the assistantship would be crazy beneficial. It would allow us to save so much money on our cost of living when many of us struggle to get by. 
+
+>The living expenses are higher in Griffin city especially rents. We need the pay adjustment to living expenses a bit more urgently.
+
+>encouraging colleges to do the full 20 hour pay for research assistants working full time
+
+>The PhD students of ECE should get more salary as the working hours are not matching with payment hours
+
+>Increase RA salaries and enhance subsidies for tuition, fees, and insurance, especially for School of Electrical and Computer Engineering
+
+>I am a graduate worker, and I had to take a second job because my job at UGA does not pay me enough to get by. I know many of my colleagues suffer from the same issue. In order to attract and retain a diverse set of quality graduate students, we must provide a livable stipend.
+
+>My current salary is only enough to support my daily life, which means I can't spend money on anything else, especially since I have to pay for insurance.
+
+>The pay disparities between MA and PhD workers, as well as between departments are problematic in their own right. But they also provide Grad School admin with a convenient and frequently used excuse as to why they can do nothing to raise grad worker pay to a living standard. Phrasing assistantship hourly responsibilities (13-20 hours/week) as "effort" also intentionally mischaracterizes grad pay more generally. It is not only insulting, but it falsely implies that grad workers have any say in their assistantship hourly responsibilities - regardless of whether we want more hours, it is entirely out of our control and arbitrarily capped at 20 hours. Of course, nearly every grad student at UGA works significantly more than the hours set in our contracts. Without graduate workers, UGA would not be able to function. Classes, labs, and research would come to a halt. Meanwhile, adminstrators like Dean Walcott make six figure salaries and say they can't do anything to raise stipends to a living standard and actively cut/limit funding opportunities. They complain that graduation rates are declining, but refuse to accept that people are having to work extra jobs to make ends meet. Graduate pay NEEDS to be increased and consistently adjusted to the rapidly rising cost of living. If overpaid administrators are unwilling to address the systematic impoverishment of grad workers, they should lose their jobs. Those like Dean Walcott have consistently demonstrated their incompetence and lack of concern for the plight of the grad students it is his job to serve. 
+
+>if possible, a reduced meal plan would be beneficial (or just an increased stipend that would be enough to cover some food expenses on top of housing)
+
+>I'd really just like a living wage. I think one semester paid sabbatical would be cool too.  
+
+>The yearly stipend should be around $25,000
+
+>While I can stay on my parent's insurance, any changes to the student insurance are a moot point. However, cost of living has exploded recently and I can barely afford rent, thus some transparency on pay rates and reducing fees would be incredibly helpful. I lose about a month's pay each semester simply to fees! 
+
+>The most important thing for me is matching the stipends to the cost of living in Athens. And considering students who have their families with them here, providing better health insurance rates for family members will make a big difference.
+
+>Benefits and remuneration should be closely evaluated in line with inflation costs, but particularly considering the costs of rental costs (and other living expenses) in Athens. Rent prices in the area have increased dramatically and many students spend around 50-60% of their income directly on rent and are forced to live in challenging situations that are not suitable for a graduate/professional student. The impact of these costs is often felt more by international (and out of State) students who have to start and equip themselves from scratch and do not have a support network. New students need to furnish apartments, organize transport, pay upfront fees (and deposits) for accommodation and many other costs when they start which presents a great deal of stress. Remuneration and benefits should be reviewed to offer all students a sense of security which directly contributes to wellness. Graduate students should not be forced to feel that they are one unforeseen event away from financial hardship and should certainly not have to forego meals or routine healthcare due to finance restrictions (as is currently the case). Students are expected to focus solely on their obligations as students without getting other employment, and international students are even further restricted legally to the hours that they may work and thus their remuneration. This makes students dependent on the benefits and remuneration provided by the University and highlights the need to review this carefully. Consider the overall remuneration, healthcare and insurance benefits, tuition and other costs, and relocation benefits. Further consider reducing limitations on working hours and external work (provided that GPA and progress are not adversely affected).
+
+>A large portion of my stipend goes towards my rent, car, health insurance, car insurance. I don’t have money leftover through out the month to put into my savings let alone a retirement fund. I am underserved, under represented and under paid despite being an essential resource for the university. An awesome way to support students is removing student fees, and or paying for the student health center fee, providing better retirement and health insurance benefits. I would like to get my teeth cleaned without paying out of pocket or sourcing a secondary insurance. 
+
+>With the current costs of living any financial subsidy or stipend increase would be immensely helpful to help cover the cost of living
+
+
+### On Health Care and Other Benefits
+>more comprehensive dental coverage and COL match
+
+>Retirement benefits for me is a top priority.
+
+>Bringing the dental clinic at UGA under the student health insurance will be helpful!
+
+>Why are you asking if it would be “beneficial” to offer us better insurance coverage? The answer should be obvious. Not sure why a survey was necessary….
+
+>Insurance fees and lack of dental coverage are the most pressing issues
+
+>on site dental clinic at UGA is currently NOT in network on UGA plan-- c'mon dawg
+
+>Having something available such as reduced cost of meal plan benifits could help with longer days of work where we do not have the time/energy to cook, but also lack the funds for takeout. This may also be able to help the lower income graduate students in general esspecially considering the increased food costs seen in recent years. 
+
+>PLEASE subsidize the health insurance! I have a colleague who had to take out loans just to pay the mandated health insurance because it's so expensive and our stipends are so low. At UF, they only pay $5/semester, meanwhile we are expected to pay ~$1700/semester. It's unacceptable. 
+
+>The current health insurance provider designated by the University for international graduate students is UnitedHealthcare. Recently, we have come to know that their claim rejection rate is twice the industry average, and allegedly they use AI to automatically reject legit claims. If possible, UGA should look for a different insurance provided for the mandatory health insurance.
+
+>All of these would be incredibly healpful. I already lived check to check before I had to worry about my own insurance now im terrified. 
+
+>More coverage for routine medication check-in appointments would be very helpful. Many folks are required to go to med check appointments every few months in order to stay on their prescribed medications.
+
+>Please please please do not make any retirement plans a default option if retirement options are provided. When I worked for a university previously, I had no option to opt out of the retirement plan and it took a large portion of my paycheck that I would have preferred to have month to month than to have in a retirement account (I have my own retirement account that I add funds to and prefer the freedom of that option.)
+
+>International TA's are required to have a healthcare plan but have no alternatives to the university plan and are forced to accept it no matter how competititve it really is. Increasing healthcare subsidy is important to avoid exploiting international students. 
+
+>An improved health insurance program with no referral policy would be greatly beneficial, particularly for students with long-term conditions treated by specialists.
+
+>Increase my pay for opting out of health insurance through UGA.
+
+>Some folks get health benefits from their spouse so it would be nice to be able to opt out of those sorts of things.
+
+>My last graduate program covered my health insurance, so it was astonishing to me to learn that UGA did not cover graduate student's required health insurance anyway. DON'T Use united healthcare for this--I trust y'all have seen the news. But Anthem/BCBS was great, and the service my last grad program offered.
+
+>I have avoided going to the dentist for years despite knowing I have cavities because I can’t afford to have them taken care of.  The front desk at the UGA dental clinic told me not to bother getting the student dental insurance because it’s such a bad plan that it’s almost never worth the cost. Also, the mandatory student insurance plan requires that UGA act as our primary care provider, but then unless we pay the extra $200 “health fee” the UGA clinic charges way more than what we would be charged at urgent care, for example. If no policies at UGA change, maybe students can band together to write a guide book for tips/tricks to get the best care we can while avoiding being overcharged. 
+
+>Healthcare insurance especially for international students (subsidized) because they can only enroll into the mandatory healthcare insurance plan. Students from the US choose the option to be on the healthcare insurance policy of their parents. 
+
+>Health insurance is way overpriced as well
+
+>I would also like more transparency in the given information for insurance policies. Having a meeting or a person to check in with whose knowledgeable in regards would’ve been extremely helpful.
+
+
+### On Student Fees and Other UGA Costs
+>Reduced fees for parking or provided/guaranteed parking close to labs/work for grad students
+
+>Make parking free for all grad school students who are under UGA employment;  Maybe UGA could consider to provide grad school student employees with a box of free lunch/dinner in UGA dining halls during week days/3 times a week. 
+
+>Student fees are really tough as are healthcare costs
+
+>Subsidies for sustainable commuting (not having a parking pass, bike commuting, carpooling, etc)
+
+>If I were to receive a full assistantship, I understand that 50% of the student fees and health insurance premiums would be waived. However, having to pay the remaining half still poses a significant financial burden. It seems that the policies regarding this vary by institution, as some schools fully waive these costs. Would it be possible to consider a full waiver in such cases? Rather than adding dental or ?vision coverage to the current insurance, I believe it would be more beneficial if the university covered a larger portion of the existing health insurance plan.
+
+>reduce parking fee and provide more parking spots near the department for graduate students 
+
+>Assistance with the Health Fee Payments, better access and free mental health counselling 
+
+>Compensation is nearly livable for graduate students, however with the increasing cost of living, particularly rent and food, and the significant expected increases in the near future this needs to be reevaluated as financial stress prevents graduate students from being the most efficient and productive that they could be. This currently looks like having to take evening and weekend jobs and therefore increasing exhaustion levels as well as rationing food to make it through the end of the month.
+
+>The fees are disappointingly high.
+
+>$16,500/year is difficult to live off when student fees are $700/semester
+
+>Related to fees, consider dropping student parking fees? I think the big fee challenge for many is the health center fees, on top of the school fees, so just things to offset that, if not actually reducing fees :). Would love a 401K, but I think that would require adjusting fees/stipend for it to be realistic for most (at least in program - psyc) to save. Thanks for doing this!
+
+>Mainly subsidies for fees or waving student UHC fee if the graduate student enrolls in the SHIP mandatory plan.  
+
+>Reduce the tution and health insurance contribution. It's a lot to do with the increasing rents here in Athens. 
+
+>The student fees are taking about 20% each month (may go higher if I take &gt;2 classes). For future students, subsidized fees will be more than helpful. 
+
+>At a bare minimum, requiring students to pay for fees like the athletic fee when abroad needs to change. If I’m working in Africa for the fall semester, I still have to pay the athletic fee for football games when I’m a 40hr flight away. Rent  in Athens is usually about 50% of the stipend. I don’t know anyone who doesn’t dip into savings throughout the semester to make ends meet. 
+
+>Because I have my wifes income we are barely able to afford a one bedroom appartment in Athens with my stipend. I have lived in Athens for 4 years now and have watched renting rates increase drastically in this time. Student fees have been a huge chunk out of my stipend and I feel that I do not even have the time to take advantage of these benifits that come with these fees becasue I have no time to take the bus going between teaching, work part time and class. 
+
+>Free employee parking: 4, 
+
+>Consistent paychecks per month, it’s hard to budget for 1/4 of your normal stipend in May and 1/2 in August, Athens is too expensive for that— also, fees and insurance are exorbitant, we shouldn’t have to pay our entire monthly paycheck at the beginning of the semester to cover them, especially since we’re not guaranteed summer funding per department and may not have been paid in a while
+
+>A significant chunk of stipend goes to the semestral school fees (around 10%), including the portion of health insurance premium paid for by the graduate assistant. I hope these fees can be reduced. Also, I was surprised to find that I owe a significant amount for state taxes this year. I hope the pertinent UGA office can review why the 2024 state taxes withheld were lower than the tax due.
+
+
+### On Pay Transparency and Variation by Department
+>I think pay transparency is critically important, especially since it varies by department, by PI, by student type (postdoc/Ph.D./master's), and by funding source. Coming in, I didn't realize how much of a graduate student's funding can be reliant on temporary and potentially unreliable sources (grants, RA/TA pay differences, etc).
+
+>Many department have endowments for scholarships or higher funding for their graduate students (eg. Salary differs across programs), so efforts to equalize this with lower paid departments would be important, rather than uniform increases across the board (eg. ILS grad students make 30k a year, and psychology grad students make about 25 a year) 
+
+>I would like to see more equal pay for grad TAs across different departments. Some departments pay their grad TAs significantly more, for doing the exact same job. These pay gaps are often also accompanied by gender differences across departments (i.e., departments with more men tend to have higher stipends)
+
+>Disparity between interdepartmental graduate assistantship is so unfair and it affects the day-to-day life of a student. A PhD student in Agricultural Economics is getting around 18K where an ILS student gets 32K! This should stop and UGA should fix a benefit package that matches the current living cost in Athens as well as inflation. UGA should also cover 100% health insurance for the students with assistantships..  
+
+### Other
+>No basic student facilities in Tifton Campus. The graduate as well as undergraduate students at Tifton campus are deprived of basic student facilities and entertainments. 
+
+>if even just one of these things were to happen my life would become waaaay less stressful.
+
+>I am SO in favor of us fighting for this!!!! So glad you all sent this out!
+
+>The ability to meet with some sort of on-campus financial advisor for graduate students would be great!
+
+>Reinstating travel grant applications to annually not 2 per year. Attending meetings is critical to professional development and networking future careers. When you're here for 5+ years and can only apply and receive travel grants for 2 meetings, that is severely limiting people whose labs don't have massive budgets for travel. 
+
+>Providing subsidies or funds specifically geared towards internationally students that have to pay up much more because of being international students.
+
+>What we do is a job and not just being a student, and it’s high time the university recognizes this!
+
+>I would like to learn if these changes apply to international students, particularly regarding vision and dental coverage.
+
+>Thanks for your tireless advocacy of graduate students!
+
+>more explicit and uniform expectations for leave time, vacations, etc. for grad assistants with 12-month appointments.
+
+>There should also be discussion on considerations of hours for assistantship. For example, if someone is an international student and their assistantship is 13.75 hours, it is hard to find a part time job to get to 20 hours to afford living in Athens.
+
+>More financial support for international students, especially incoming international students who may not be aware of various opportunities.
+
+>Overtime compernsation, it should be 20 hours really not more
+
+>I would appreciate if all graduate students are paid equally throughout the entire month.
+
+>Chance the availability of Graduate students to change the requirement plan.
+
+>We need some sort of protection for graduate students who are at risk of losing their grant funding
+
+## Full Code
+```{r}
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+
+#load in data
+survey = read.table("C:/Users/sav61051/OneDrive - University of Georgia/Desktop/comp_benefit_survey.txt",
+                    sep = "\t", header = T)
+survey$N = 1
+
+#clean up data
+survey = survey %>% 
+  mutate(College = case_when(College == "" ~ "Unknown",
+                             .default = as.character(College)))
+
+#basic demographics ####
+survey_demo = survey %>% 
+  group_by(Degree, AssistYN, College) %>% 
+  summarise(N = sum(N)) %>% 
+  ungroup() %>% 
+  mutate(Percent = (N/sum(N))*100)
+survey_demo.d = survey %>% 
+  group_by(Degree) %>% 
+  summarise(N = sum(N)) %>% 
+  ungroup() %>% 
+  mutate(Percent = (N/sum(N))*100)
+survey_demo.c = survey %>% 
+  group_by(College) %>% 
+  summarise(N = sum(N)) %>% 
+  ungroup() %>% 
+  mutate(Percent = (N/sum(N))*100)
+survey_demo.a = survey %>% 
+  group_by(AssistYN, Assistantship) %>% 
+  summarise(N = sum(N)) %>% 
+  ungroup() %>% 
+  mutate(Percent = (N/sum(N))*100)
+
+survey_demo.d = survey_demo.d %>% 
+  mutate(Degree = case_when(Degree == "" ~ "Unknown",
+                            .default = as.character(Degree)))
+
+#make a pi chart
+survey_demo.c = survey_demo.c %>% 
+  mutate(College = case_when(College == "Unknown" ~ "Other",
+                             .default = as.character(College)))
+
+ggplot(survey_demo.c, aes(x = "", y = N, fill = College)) +
+  geom_col(color = "black") +
+  coord_polar(theta = "y") +
+  labs(title = "Respondents by College") +
+  theme_void()
+
+#basic averages for all scale questions ####
+survey_sum = survey %>% 
+   summarize(Q1 = mean(Q1),
+            Q2 = mean(Q2),
+            Q3 = mean(Q3),
+            Q4 = mean(Q4),
+            Q5 = mean(Q5),
+            Q6 = mean(Q6),
+            Q7 = mean(Q7),
+            Q8 = mean(Q8))
+
+#make a chart
+survey_q.l = survey[,1:9] %>% 
+  pivot_longer(cols = Q1:Q8)
+  
+ggplot(survey_q.l, aes(x = name, y = value)) +
+  geom_boxplot() +
+  labs(title = "Responses Overall (n = 449)",
+       x = "Question",
+       y = "Scale") +
+  theme_bw()
+
+#by degree
+survey_sum.d = survey %>% 
+  group_by(Degree) %>% 
+  summarize(Q1 = mean(Q1),
+            Q2 = mean(Q2),
+            Q3 = mean(Q3),
+            Q4 = mean(Q4),
+            Q5 = mean(Q5),
+            Q6 = mean(Q6),
+            Q7 = mean(Q7),
+            Q8 = mean(Q8),
+            N = sum(N))
+
+#by assistantship
+survey_sum.a = survey %>% 
+  group_by(AssistYN) %>% 
+  summarize(Q1 = mean(Q1),
+            Q2 = mean(Q2),
+            Q3 = mean(Q3),
+            Q4 = mean(Q4),
+            Q5 = mean(Q5),
+            Q6 = mean(Q6),
+            Q7 = mean(Q7),
+            Q8 = mean(Q8),
+            N = sum(N))
+```
+
+
+
+
+
